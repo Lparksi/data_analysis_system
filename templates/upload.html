@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>上传Excel文件</title>
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        数据文件: <input type="file" name="excel_file">
+        <select name="template_option">
+    <option value="option1">成绩模板1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <!-- Add more options as needed -->
+</select>
+        <br>
+        配置模板: <input type="file" name="config_file">
+
+        <input type="submit" value="上传">
+    </form>
+    <br>
+下载模板：<a href="/download/template1.xlsx">成绩模板1</a>
+下载配置：<a href="/download/template1.ini">配置模板1</a>
+
+</body>
+</html>
